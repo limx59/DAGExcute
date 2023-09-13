@@ -45,15 +45,15 @@ The time complexity of population initialization mainly depends on the process o
 
 Evaluating the fitness of each schedule requires iterating through each job and calculating the total completion time. In the worst case, K comparisons are required for each job, so the time complexity of the evaluation is O(KV).
 
-4. Selection:
+3. Selection:
 
 The selection operation involves only sorting the schedules in the population and has a time complexity of O(populationSize * log(populationSize)).
 
-6. Crossover: 
+4. Crossover: 
 
 The time complexity of the crossover operation depends on the actual crossover strategy. In this example, we perform a simple merge operation with time complexity of O(1).
 
-6. Mutation: 
+5. Mutation: 
 
 The time complexity of the mutation operation depends on the actual mutation strategy. In this example, we perform a mutation operation with a time complexity of O(1).
 
