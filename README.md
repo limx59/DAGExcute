@@ -2,8 +2,8 @@
 DAG job scheduling based on genetic algorithm
 
 GIVEN:
-An arbitrary workflow, i.e. directed acyclic graph (DAG) G=(V, E), where each node v is a job and each directed edge (u, v) shows that the output data of job u is transferred as the input data of job v, K homogeneous machines, the execution time t(v) of each job on a single machine, and the communication time t(u, v) of each data transfer between jobs u and v running in different machines.
 
+An arbitrary workflow, i.e. directed acyclic graph (DAG) G=(V, E), where each node v is a job and each directed edge (u, v) shows that the output data of job u is transferred as the input data of job v, K homogeneous machines, the execution time t(v) of each job on a single machine, and the communication time t(u, v) of each data transfer between jobs u and v running in different machines.
 任意工作流程，即有向无环图 (DAG) G=(V, E)，其中每个节点 v 是一个作业，每个有向边 (u, v) 表明作业 u 的输出数据被传输为作业 u 的输入数据 作业 v，K 个同构机器，每个作业在单机上的执行时间 t(v)，以及运行在不同机器上的作业 u 和 v 之间每次数据传输的通信时间 t(u, v)。
 
 QUESTION:
@@ -12,10 +12,12 @@ Find the minimum execution time of the entire workflow along with a feasible sch
 找到整个工作流程的最短执行时间以及将所有作业映射到不超过 K 台机器上的可行计划
 
 REQUIREMENT:
+
 Comment on the difficulty (i.e., computational complexity) of the above problem, design an efficient algorithm, implement the solution, (which may be an exact, approximation, or heuristic algorithm), and show the execution results. (C/C++ in Linux and Makefile are required.)
 评论上述问题的难度（即计算复杂度），设计有效的算法，实现解决方案（可以是精确的、近似的或启发式的算法），并显示执行结果。 （需要 Linux 中的 C/C++ 和 Makefile。）
 
 SOLUTION:
+
 1. Initialize the population: At the beginning, a population is randomly generated, in which each individual represents a possible job scheduling solution. Each individual includes which machine each job is assigned to and the order in which the jobs are executed on each machine.
 1. 初始化种群：开始时，随机生成一个种群，其中每个个体表示一个可能的作业调度方案。每个个体包括每个作业分配哪台机器以及每台机器上的作业执行顺序。
 
